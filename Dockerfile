@@ -1,7 +1,6 @@
 FROM golang:1.15-alpine
 
-# Install beego & bee
-RUN go get github.com/astaxie/beego
+RUN go get -u github.com/swaggo/swag/cmd/swag
 RUN go get github.com/beego/bee
 
 EXPOSE 80
