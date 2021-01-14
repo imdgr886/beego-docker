@@ -1,6 +1,6 @@
 FROM golang:1.15
 
-# Install bee
+RUN go get -u github.com/swaggo/swag/cmd/swag
 RUN go get github.com/beego/bee
 
 EXPOSE 80
